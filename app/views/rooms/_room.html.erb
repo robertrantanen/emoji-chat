@@ -1,0 +1,19 @@
+<div id="<%= dom_id room %>">
+  <h2>
+    <%= room.name %>
+  </h2>
+
+  <%= form_with(model: @message) do |form| %>
+    <%= form.text_area :content %>
+    <%= form.hidden_field :room_id, value: @room.id %>
+    <br/>
+    <%= form.submit "New message" %>
+  <% end %>
+
+  <p>
+    <% room.messages.each do |message| %>
+      <div><%= message.content %><div/>
+    <% end %>
+  </p>
+
+</div>

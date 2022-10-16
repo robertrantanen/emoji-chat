@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Emoji chat</h1>
+
+<h2>Chat rooms</h2>
+
+<div id="rooms">
+  <% @rooms.each do |room| %>
+    <p>
+      <%= link_to room.name, room %>
+    </p>
+  <% end %>
+</div>
+
+
+<%= link_to "Create new chat room", new_room_path %>
