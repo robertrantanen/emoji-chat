@@ -4,7 +4,9 @@
   </h2>
 
   <%= form_with(model: @message) do |form| %>
-    <%= form.text_area :content %>
+    <p class="emoji-picker-container">
+      <%= form.text_area :content, class: 'form-control', data: { emojiable: true } %>
+    </p>
     <%= form.hidden_field :room_id, value: @room.id %>
     <br/>
     <%= form.submit "New message" %>
