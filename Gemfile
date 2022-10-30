@@ -24,9 +24,9 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'rails_emoji_picker'
 
-gem 'sassc-rails'
+gem 'bootstrap', '~> 5.2.0'
 
-gem 'bootstrap'
+gem 'mini_racer'
 
 gem 'jquery-rails'
 

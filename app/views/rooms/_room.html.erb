@@ -14,7 +14,7 @@
 
   <p>
     <% room.messages.each do |message| %>
-      <div><%= message.user.username %>: <%= message.content %><div/>
+      <div><%= message.user.username %>: <%= content_with_emoji(message.content) %><div/>
     <% end %>
   </p>
 
