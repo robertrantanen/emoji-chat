@@ -23,9 +23,10 @@
       <% end %>
     </div>
     <div class="ps-5">
+    <h1>Emoji chat <%= image_tag ("emoji/smiley.png"), class: "img-responsive"%> <%= image_tag ("emoji/speech_balloon.png"), class: "img-responsive"%> </h1>
     <%= yield %>
     </div>
-  <script src="/assets/jquery.js" type="text/javascript"></script>
-  <%= javascript_include_tag 'rails_emoji_picker' %>
+    <script src="/assets/jquery.js" type="text/javascript"></script>
+    <%= javascript_include_tag 'rails_emoji_picker' %>
   </body>
 </html>

@@ -14,7 +14,7 @@
   <br>
   <div style="height:500px;width:500px;border-width:5px; border-style:solid; border-color:#9ACD32;overflow:auto;display: flex;flex-direction: column-reverse;">
     <% room.messages.reverse.each do |message| %>
-      <div><%= message.user.username %>: <%= content_with_emoji(message.content) %></div>
+      <div style="font-size:20px"><%= message.user.username %>: <%= content_with_emoji(message.content) %></div>
     <% end %>
   </div>
   <br>
